@@ -1,3 +1,3 @@
 # kickstarter-analysis
 Preforming analysis on Kickstarter data to uncover trends
-Outcomes_vs_Goals.png
+kickstarter-analysis/Outcomes_vs_Goals.png 
