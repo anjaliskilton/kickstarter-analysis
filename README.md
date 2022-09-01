@@ -12,27 +12,46 @@ The first goal of the project is referred to as the Analysis of Outcomes Based o
 ### Analysis of Outcomes Based on Launch Date
 Utilizing PivotTables one can create a sortable table and chart best on a selected excel sheet.
 First the desired sheet was selected and highlighted (in this case it was our Kickstarter sheet). Then in the insert tab PivotChart was selected with the option PivotChart & PivotTable and placing the PivotTable in a new worksheet. 
+
 ![PivotTable_start](PivotTable_start.JPG)
+
 A new sheet opened up with the PivotTable and options pop-up to the right hand of the screen called PivotTable Fields. In this area a list of column categories was shown at the top of the screen. Here the different categories were dragged and dropped into four sections filters, columns, rows, and values. It is important to note that values will create a count of whatever category is dragged and dropped into this section. 
+
 ![List_for_PivotTable](List_for_PivotTable.PNG)
+
 The PivotTable was then filtered by theater in the parent category. Then by clicking the insert tab and the line graph icon (highlighted in red) a pop-up table with line graph options will appear. By selecting the option with points along the line graph, a graph with the data for the PivotTable appeared on the current sheet. 
+
 ![Pivot_Table](Pivot_Table.PNG)
+
 This graph was then copy and pasted into paint and saved as a png. 
+
 ![Theater_Outcomes_vs_Launch.png](Theater_Outcomes_vs_Launch.png.png)
+
 ### Analysis of Outcomes Based on Goals
 Creating an analysis of outcomes based on goal takes a slightly different approach than that of launch date. This called for a new sheet in the Excel workbook to be created titled Outcomes Based on Launch Date. In order to start the analysis 8 columns (shown in figure below) were added to the sheet.
+
 ![Goal_sheet_look](Goal_sheet_look.PNG)
+
 In the goal column a set of numeric parameters were listed out to differentiate the certain type of goal. These rows were the basis for the rest of the analysis. 
+
 ![Goals_fxn](Goals_fxn.PNG)
+
 In the following column (number successful) the COUNTIFS function was used to pull data within given parameters from our goals column from the Kickstarter worksheet. In the figure below you will see COUNTIFS, which tells Excel we want to use the COUNTIFS function. Then you will see Kickstarter!$D:$D, which denotes where we are pulling out information from (Kickstarter worksheet in column D). The <1000 tells Excel to count all values less than 1000 in the former specified column. Next, the Kickstarter!$F:$F,"Successful means the same as above except Excel is looking for the term Successful in column F of the Kickstarter worksheet. Thus, Excel is looking for all terms that say Successful in the Kickstarter worksheet in column F which correspond to a value under 1000 in the Kickstarter worksheet in column D.
+
 ![countifs](countifs.PNG)
+
 A similar function is used for the mixed inequalities, except and extra term (in this case Kickstarter!$D:$D,"<=4999") is added to the end out the COUNTIFS function to set the exact range wanted. The same process and function was then applied to Number Successful, Number Failed, and Number Canceled rows. 
+
 ![countifs_2](countifs_2.PNG)
+
 In the total project’s column, a simple sum function was used to add up all the successful, failed, and cancelled projects in the corresponding row. 
 
 All percentages were also calculated by simple division and changing the cell type to a percentage. For instance, the number of successful was divided by total projects to give a decimal value, which then was converted into a percentage when cell type was changed from general to percentage. 
+
 ![sum](sum.png)
+
 The derived percentages were then plotted in a line graph against the goal range to demonstrate the effectiveness of each range.
+
 ![Outcomes_vs_Goals](Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
