@@ -21,7 +21,7 @@ A new sheet opened up with the PivotTable and options pop-up to the right hand o
 
 The PivotTable was then filtered by theater in the parent category. Then by clicking the insert tab and the line graph icon (highlighted in red) a pop-up table with line graph options will appear. By selecting the option with points along the line graph, a graph with the data for the PivotTable appeared on the current sheet. 
 
-![Pivot_Table](Pivot_Table.PNG)
+![How_to_make_graph](How_to_make_graph.PNG)
 
 This graph was then copy and pasted into paint and saved as a png. 
 
