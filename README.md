@@ -5,7 +5,7 @@
 
 ### Purpose
 The first goal of this project was to create a chart and graph to demonstrate campaign outcomes based on launch date. The second goal of this project was to create a chart to demonstrate outcomes based on goals. 
-
+![PivotTable_start](kickstarter-analysis/PivotTable_start.JPG)
 ## Analysis and Challenges
 The first goal of the project is referred to as the Analysis of Outcomes Based on Launch Date and the second goal of the project is referred to as the Analysis of Outcomes Based on Goals. These goals will be discussed in the former order with PivotTables being the main focus of the first project and COUNTIFS() being the main focus of the second project.
 
